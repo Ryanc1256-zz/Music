@@ -1,0 +1,42 @@
+body, html {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #707e6c url('../images/background.png');
+  overflow: hidden;
+}
+
+
+.holder {
+  overflow: auto;
+  height: 82.8%;
+  /* Let's get this party started */
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.31);
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,0.4);
+  }
+}
+
+
+
+@import 'includes/mixins/index';
+@import 'includes/topbar/index';
+@import 'includes/purchase/index';
+@import 'includes/track/index';
+@import 'includes/footer/index';
+@import 'includes/blanktext/index';
+@import 'includes/menu/index';
+@import 'includes/buttons/index';

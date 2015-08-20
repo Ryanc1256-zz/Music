@@ -1,0 +1,18 @@
+#account {
+  background: #fff;
+  position: absolute;
+  top:110px;
+  left: 35%;
+  display: none;
+  @include drop-shadow(2px, 2px, 2px, 0.25);
+  .account {
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  h2 {
+    background: #ccc;
+    margin: 0;
+    padding: 5px;
+  }
+}

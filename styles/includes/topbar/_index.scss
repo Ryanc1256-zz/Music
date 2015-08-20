@@ -1,0 +1,84 @@
+.topbar {
+    position: fixed;
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+#logo {
+    float: left;
+    margin: 13px;
+    img {
+      width: 64px;
+    }
+}
+
+.toggleButton {
+  cursor: pointer;
+  width: 46px;
+  float: left;
+  i {
+      font-size: 30px;
+      padding: 20px;
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+
+.account {
+  float: right;
+  border: 1px solid #eee;
+  margin: 9px 12px;
+  cursor: pointer;
+  .button {
+    i { float: left; margin: 18px 10px}
+    .userimg {
+      float: left;
+    }
+  }
+  .dropdown {
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid #B3B3B3;
+    border-radius: 2px 0 2px 0;
+    display: none;
+    @include drop-shadow(2px, 2px, 4px, 0.25);
+    &:before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: 25px;
+      border-left: 10px solid transparent;
+      border-top: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #B3B3B3;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: -18;
+      right: 26px;
+      border-left: 9px solid transparent;
+      border-top: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid #fff;
+    }
+    ul {list-style: none;padding-left: 0;margin: 0;}
+    li {
+      padding: 9px 100px;
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      &:hover {
+        background: rgba(0,0,0,0.25);
+      }
+    }
+  }
+}

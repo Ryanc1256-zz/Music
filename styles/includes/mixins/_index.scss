@@ -1,0 +1,17 @@
+@mixin drop-shadow($x: 2px, $y:0px, $blur:5px, $alpha: 0.25){
+  box-shadow: $x $y $blur rgba(0,0,0,$alpha);
+  -moz-box-shadow: $x $y $blur rgba(0,0,0,$alpha);
+  -webkit-box-shadow: $x $y $blur rgba(0,0,0,$alpha);
+}
+
+@mixin inner-shadow($x: 2px, $y: 0px, $blur:5px, $alpha: 0.25){
+  box-shadow: inset $x $y $blur rgba(0,0,0,$alpha);
+  -moz-box-shadow: inset $x $y $blur rgba(0,0,0,$alpha);
+  -webkit-box-shadow: inset $x $y $blur rgba(0,0,0,$alpha);
+}
+
+@mixin transition($type: all, $style: linear, $speed: .2s){
+  -moz-transition: $type $style $speed;
+  -webkit-transition: $type $style $speed;
+  transition: $type $style $speed;
+}
